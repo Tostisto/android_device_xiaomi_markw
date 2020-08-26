@@ -13,13 +13,12 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.mokee.touch@1.0-service.xiaomi_markw",
-    init_rc: ["vendor.mokee.touch@1.0-service.xiaomi_markw.rc"],
+    name: "vendor.lineage.touch@1.0-service.xiaomi_8953",
+    init_rc: ["vendor.lineage.touch@1.0-service.xiaomi_8953.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     vendor: true,
     srcs: [
-        "GloveMode.cpp",
         "KeyDisabler.cpp",
         "service.cpp"
     ],
@@ -28,6 +27,6 @@ cc_binary {
         "libhidlbase",
         "libhidltransport",
         "libutils",
-        "vendor.mokee.touch@1.0",
+        "vendor.lineage.touch@1.0",
     ],
 }
